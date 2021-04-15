@@ -1,6 +1,7 @@
 noseX=0;
 noseY=0;
 function preload(){
+    clown=loadImage("https://i.postimg.cc/4dqKqd6p/Png-Item-1147898.png");
 }
 function setup() {
 canvas=createCanvas(300,300);
@@ -23,7 +24,6 @@ function gotPoses(results){
         console.log("Nose Y="+noseY);
     }
 }
-clown=loadImage("https://i.postimg.cc/4dqKqd6p/Png-Item-1147898.png");
 function draw(){
   image(video,0,0,300,300);
   image(clown,noseX,noseY,30,30);
